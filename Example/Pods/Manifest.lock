@@ -1,0 +1,16 @@
+PODS:
+  - JVSunBurstView (0.1.0)
+
+DEPENDENCIES:
+  - JVSunBurstView (from `../`)
+
+EXTERNAL SOURCES:
+  JVSunBurstView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JVSunBurstView: 00661a385de422249965b8e80e9ada69cf297b47
+
+PODFILE CHECKSUM: 4498fbe94db3f203942efc0c334153fcaf5740b5
+
+COCOAPODS: 1.6.0.beta.1

@@ -1,0 +1,6 @@
+use_frameworks!
+target 'JVSunBurstView_Tests' do
+  pod 'JVSunBurstView', :path => '../'
+  
+  
+end
