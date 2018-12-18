@@ -148,10 +148,24 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/DeviceKit/DeviceKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/JVCALayerExtensions/JVCALayerExtensions.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/JVConstraintEdges/JVConstraintEdges.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/JVContentType/JVContentType.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/JVCurrentDevice/JVCurrentDevice.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/JVSizeable/JVSizeable.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/JVSunBurstView/JVSunBurstView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/JVUIViewExtensions/JVUIViewExtensions.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/DeviceKit/DeviceKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/JVCALayerExtensions/JVCALayerExtensions.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/JVConstraintEdges/JVConstraintEdges.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/JVContentType/JVContentType.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/JVCurrentDevice/JVCurrentDevice.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/JVSizeable/JVSizeable.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/JVSunBurstView/JVSunBurstView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/JVUIViewExtensions/JVUIViewExtensions.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

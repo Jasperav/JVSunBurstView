@@ -1,16 +1,48 @@
 PODS:
-  - JVSunBurstView (0.1.0)
+  - DeviceKit (1.11.0)
+  - JVCALayerExtensions (0.1.1)
+  - JVConstraintEdges (0.1.9):
+    - JVContentType
+    - JVSizeable
+  - JVContentType (0.1.6)
+  - JVCurrentDevice (0.1.1):
+    - DeviceKit
+  - JVSizeable (0.1.0)
+  - JVSunBurstView (0.1.0):
+    - JVCALayerExtensions
+    - JVConstraintEdges
+    - JVCurrentDevice
+    - JVUIViewExtensions
+  - JVUIViewExtensions (0.1.0)
 
 DEPENDENCIES:
   - JVSunBurstView (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - DeviceKit
+  "https://Jasperav@bitbucket.org/Jasperav/specs.git":
+    - JVCALayerExtensions
+    - JVConstraintEdges
+    - JVContentType
+    - JVCurrentDevice
+    - JVSizeable
+    - JVUIViewExtensions
 
 EXTERNAL SOURCES:
   JVSunBurstView:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JVSunBurstView: 00661a385de422249965b8e80e9ada69cf297b47
+  DeviceKit: a3a86f8dddbe1317a9a243cdf9646858bf135dce
+  JVCALayerExtensions: d4d9b389f5d29b8b9086a0f48be5245b81859356
+  JVConstraintEdges: c2db42051f75f23126230e4e83e5361a9dd5e18f
+  JVContentType: 4e3a6dd8a99feaff3032928bc808bd3f835ba247
+  JVCurrentDevice: 36aaad85ebb56d935de74e7b3bc47c852899dc39
+  JVSizeable: 1252e6b1bed411b3fc34f6119d8eaf6803876cd3
+  JVSunBurstView: 49843e0a1a65727be67d99852b78e21ed3d06b50
+  JVUIViewExtensions: 3b1408481d2009471e091ad38c9e2b3598c3151d
 
-PODFILE CHECKSUM: 4498fbe94db3f203942efc0c334153fcaf5740b5
+PODFILE CHECKSUM: 4e524470b35eec329d23032b7d9a2369c8393975
 
 COCOAPODS: 1.6.0.beta.1

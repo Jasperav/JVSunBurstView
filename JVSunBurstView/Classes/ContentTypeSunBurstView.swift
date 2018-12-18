@@ -1,6 +1,6 @@
 import JVContentType
 
-public final class ContentTypeSunBurstView: ContentType, Copyable {
+public struct ContentTypeSunBurstView: ContentType {
     
     public static var allTypes = Set<ContentTypeSunBurstView>()
     
@@ -23,16 +23,5 @@ public final class ContentTypeSunBurstView: ContentType, Copyable {
         self.lineWidth = lineWidth
         self.strokeColor = strokeColor
     }
-    
-    public required init(old: ContentTypeSunBurstView, newContentTypeId: String?) {
-        contentTypeId = newContentTypeId
-        useLargestFrameToLayoutSlices = old.useLargestFrameToLayoutSlices
-        slices = old.slices
-        colors = old.colors
-        rotationSpeed = old.rotationSpeed
-        rotationSpeedTouchDown = old.rotationSpeedTouchDown
-        lineWidth = old.lineWidth
-        strokeColor = old.strokeColor
-    }
-    
+
 }

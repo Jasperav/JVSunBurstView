@@ -1,3 +1,7 @@
+source 'https://Jasperav@bitbucket.org/Jasperav/specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+
 use_frameworks!
 target 'JVSunBurstView_Tests' do
   pod 'JVSunBurstView', :path => '../'

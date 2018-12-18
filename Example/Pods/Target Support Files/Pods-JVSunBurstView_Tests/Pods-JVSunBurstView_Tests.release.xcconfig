@@ -1,9 +1,9 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/JVSunBurstView"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/DeviceKit" "${PODS_CONFIGURATION_BUILD_DIR}/JVCALayerExtensions" "${PODS_CONFIGURATION_BUILD_DIR}/JVConstraintEdges" "${PODS_CONFIGURATION_BUILD_DIR}/JVContentType" "${PODS_CONFIGURATION_BUILD_DIR}/JVCurrentDevice" "${PODS_CONFIGURATION_BUILD_DIR}/JVSizeable" "${PODS_CONFIGURATION_BUILD_DIR}/JVSunBurstView" "${PODS_CONFIGURATION_BUILD_DIR}/JVUIViewExtensions"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "${PODS_CONFIGURATION_BUILD_DIR}/JVSunBurstView/JVSunBurstView.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "JVSunBurstView"
+OTHER_CFLAGS = $(inherited) -iquote "${PODS_CONFIGURATION_BUILD_DIR}/DeviceKit/DeviceKit.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/JVCALayerExtensions/JVCALayerExtensions.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/JVConstraintEdges/JVConstraintEdges.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/JVContentType/JVContentType.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/JVCurrentDevice/JVCurrentDevice.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/JVSizeable/JVSizeable.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/JVSunBurstView/JVSunBurstView.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/JVUIViewExtensions/JVUIViewExtensions.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "DeviceKit" -framework "JVCALayerExtensions" -framework "JVConstraintEdges" -framework "JVContentType" -framework "JVCurrentDevice" -framework "JVSizeable" -framework "JVSunBurstView" -framework "JVUIViewExtensions"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
